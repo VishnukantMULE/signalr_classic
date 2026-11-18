@@ -1,0 +1,25 @@
+name: signalr_classic
+description: >-
+  A pure-Dart client for classic ASP.NET SignalR 2.x hubs (not ASP.NET Core).
+  WebSockets, Server-Sent Events and Long Polling with automatic fallback,
+  keep-alive monitoring, automatic reconnect, hub proxies, and a drop-in
+  replacement for the signalr_flutter plugin API.
+version: 1.0.0
+# Internal package for now. Remove this line only after a deliberate decision to publish.
+publish_to: none
+
+# Lower bound 2.18 keeps the code usable from projects still on Dart 2.18
+# language level (no records, patterns, sealed or class modifiers are used).
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  windows:
+
+dev_dependencies:
+  lints: ">=2.0.0 <7.0.0"
+  test: ^1.25.0
